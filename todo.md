@@ -1,13 +1,15 @@
 Todos/Ideas
 ===========
 Smug's TODO:
--Make bot assign tripcodes to account name(s) in database (?)
--Make bot console display specific colors for specific phrases (Stealth rocks phrases in brown, Nice skill in yellow)
--Phrases
---if oppmon.fainted < 0 say "6-0 avoided, champ wins!"
---if opphas(Landorus) == true say "LAAAAAAAAAAAAAAAANDOOOOOOOOOOOOOOOOOOOOOO!!!!!"
---if champmon.kill(hoge) == 1 && hp > 50% spam some HOGE CHEERS
---if oppmon(1 thru 6).dexnum <= 151 say "ahem \n KAAAAAAAAAAAAAAAAAAAAAAANTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
+- Make bot assign tripcodes to account name(s) in database (?)
+- Make bot console display specific colors for specific phrases (Stealth rocks phrases in brown, Nice skill in yellow)
+- Phrases
+- - if oppmon.fainted < 0 say "6-0 avoided, champ wins!"
+- - if opphas(Landorus) == true say "LAAAAAAAAAAAAAAAANDOOOOOOOOOOOOOOOOOOOOOO!!!!!"
+- - if champmon.kill(hoge) == 1 && hp > 50% spam some HOGE CHEERS
+- - if oppmon(1 thru 6).dexnum <= 151 say "ahem \n KAAAAAAAAAAAAAAAAAAAAAAANTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
+- - if PreciousLeaf joins, bully!!!
+- - if champ has 60 seconds left say "WAKE UP CHAMP!!!!!!!!!"
 
 og todo:
 - Make dogars-chan follow invites
