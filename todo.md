@@ -8,8 +8,10 @@ Smug's TODO:
 - - if opphas(Landorus) == true say "LAAAAAAAAAAAAAAAANDOOOOOOOOOOOOOOOOOOOOOO!!!!!"
 - - if champmon.kill(hoge) == 1 && hp > 50% spam some HOGE CHEERS
 - - if oppmon(1 thru 6).dexnum <= 151 say "ahem \n KAAAAAAAAAAAAAAAAAAAAAAANTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
-- - if PreciousLeaf joins, bully!!!
+- - if PreciousLeaf joins, bully!!! (optional)
 - - if champ has 60 seconds left say "WAKE UP CHAMP!!!!!!!!!"
+- - if any mon gets FRZ say "Am I glad he's frozen in there and that we're out here, and that he's the sheriff, and that we're frozen out here, and that we're in there, and I just remembered, we're out here. What I wanna know is, where's the caveman?"
+
 
 og todo:
 - Make dogars-chan follow invites
