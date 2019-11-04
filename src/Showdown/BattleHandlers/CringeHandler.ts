@@ -17,7 +17,7 @@ export default class CringeHandler extends BasicHandler {
     async c(m: BattleEvents['c']) {
         if (!this.ready)
             return;
-        if (m[1].includes('dogars'))
+        if (m[1].includes('dogars' || 'smug'))
             return;
         let norm = m[2].toLowerCase();
         if (!(/\*sn(a|i)ps?\*/i).test(norm))

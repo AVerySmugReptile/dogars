@@ -41,7 +41,8 @@ export default class GreetingHandler extends BasicHandler {
 		if (this.bantered || this.bantering)
 			return;
 		this.bantering = true;
-		this.account.message(this.roomname, `>he does it for free!`);
+		//this.account.message(this.roomname, `>he does it for free!`);
+		this.account.message(this.roomname, `"we pay to be mods" - DaWoblefet 2019`);
 		let pastab = await fsp.readFile(settings.ressources + '/pasta.txt');
 		let pasta = pastab.toString().split('\n');
 		try {
@@ -62,12 +63,23 @@ export default class GreetingHandler extends BasicHandler {
 			this.banter();
 		}
 	}
-
+	/*
+	> X joins
+	> "Hi X!"
+	*/
 	async j(mes: BattleEvents['j']) {
-		if (!this.hi.includes(mes[1]) && mes[1].toLowerCase().substr(1) == 'roxle') {
+		if (!this.hi.includes(mes[1]) && 
+			( mes[1].toLowerCase().substr(1) == 'roxle' 
+			//||  mes[1].toLowerCase().substr(1) == 'thelordofsmug'
+			||  mes[1].toLowerCase().substr(1) == 'boo!xle')) {
 			this.account.message(this.roomname, `Hi ${mes[1]} ❤️!`);
 			this.hi.push(mes[1]);
 		}
+		/*if (!this.hi.includes(mes[1]) && 
+			( mes[1].toLowerCase().substr(1) == 'thelordofsmug')) {
+			this.account.message(this.roomname, `Greetings, father.`);
+			this.hi.push(mes[1]);}*/
+		
 		if ('%@'.includes(mes[1][0])) {
 			this.banter();
 		}
@@ -77,8 +89,9 @@ export default class GreetingHandler extends BasicHandler {
 		let norm = m[2].toLowerCase();
 		if (banlist.find(w => m[1].includes(w)))
 			return;
-		if (!norm.includes(`hi ${this.account.user}`) &&
-			!norm.includes(`hi  ${this.account.user}`))
+		//.toLowerCase() ensures it doesn't read JUST lc-only names 
+		if (!norm.includes(`Hi ${this.account.user}.toLowerCase()`) && 
+			!norm.includes(`hi  ${this.account.user}.toLowerCase()`))
 			return;
 		if (this.hi.includes(m[1]))
 			return;

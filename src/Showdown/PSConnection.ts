@@ -35,6 +35,7 @@ export class PSConnection {
 		this.ws && this.ws.close();
 		this.ws = new SockJS('https://sim2.psim.us/showdown');
 		this.ws.onmessage = ev => {
+			console.log(ev)
 			if (ev.data[0] == '>') {
 				let { room, events } = eventToPSBattleMessage(ev);
 				if (this.rooms.has(room)) {
@@ -83,7 +84,7 @@ export class PSConnection {
 			this.openrej && this.openrej(new Error(e && e.type));
 		}
 
-		this.ws.onerror = (e?: Event) => {
+		this.ws.onerror = (e?: Event) => { //triggers when JACK fails 
 			this.opened = false;
 			this.usable = false;
 			this.openrej && this.openrej(new Error(e && e.type));
@@ -191,7 +192,9 @@ export class PSConnection {
 		} catch (e) {
 			console.log('Something horribly wrong happened, disabled websocket', e);
 			this.close();
-			await this.start();
+			//await 
+			this.start();
+			
 		}
 	}
 };

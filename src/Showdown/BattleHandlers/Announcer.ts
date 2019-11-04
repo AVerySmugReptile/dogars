@@ -94,7 +94,7 @@ export default class Announcer extends BasicHandler {
         }
     }
 
-    async move(m: BattleEvents['move']) {
+    async move(m: BattleEvents['move']) { //user 1 move 2 target 3
         let user = m[1];
         let move = m[2];
         let target = m[3];
@@ -128,6 +128,8 @@ export default class Announcer extends BasicHandler {
             let mon = m[1].substr(5);
             if (Math.random() < 0.125)
                 this.account.message(this.roomname, `あいての ${mon}の **「${p}」**!`);
+			else if (Math.random() > .85)
+				this.account.message(this.roomname, `${mon} got rocks up, gg`);
             else
                 this.account.message(this.roomname, `The opposing ${mon} used **${p}**!`);
         }
@@ -139,6 +141,11 @@ export default class Announcer extends BasicHandler {
                 return;
             this.account.message(this.roomname, `le hot water of skill claims another`);
         }
+		if (s[2] == 'frz'){
+			this.account.message(this.roomname,`Am I glad he's frozen in there and that we're out here, 
+			and that he's the sheriff, and that we're frozen out here, and that we're
+			in there, and I just remembered, we're out here. What I wanna know is, where's the caveman?`);
+		}
     }
 
     async "switch"(s: BattleEvents['switch']) {
