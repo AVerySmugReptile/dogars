@@ -32,8 +32,9 @@ export let monitor = (champ: Champ, account: Player) => {
     await DogarsClient.connect();
 
     let ransuff = (n: number) => [...new Array(n)].map(e => '' + ~~(Math.random() * 10)).join('');
-
-    let dogarschan = new Player('dogars-chan' + ransuff(3));
+	//let dogarschan = new Player('dogars-chan' + ransuff(3)); default dogars-chan autoegg
+    let dogarschan = new Player('SlowNSmug', 'poketoon1');
+	//let dogarschan = new Player('Galariandogars', 'dogars');
     await dogarschan.connect();
     console.log('Connected')
     monitor(await DogarsClient.refresh(), dogarschan);
