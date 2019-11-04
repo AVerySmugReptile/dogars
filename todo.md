@@ -3,20 +3,22 @@ Todos/Ideas
 Smug's TODO:
 Add:
 - Make bot assign tripcodes to account name(s) in database (?)
-- Make bot console display specific colors for specific phrases (Stealth rocks phrases in brown, Nice skill in yellow)
+- Make bot console display specific colors for specific phrases (Stealth rocks phrases in brown, Nice skill in yellow) (?)
 - Phrases
 - - if oppmon.fainted < 0 say "6-0 avoided, champ wins!"
 - - if opphas(Landorus) == true say "LAAAAAAAAAAAAAAAANDOOOOOOOOOOOOOOOOOOOOOO!!!!!"
-- - if champmon.kill(hoge) == 1 && hp > 50% spam some HOGE CHEERS [does this sorta]
 - - if oppmon(1 thru 6).dexnum <= 151 say "ahem \n KAAAAAAAAAAAAAAAAAAAAAAANTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
 - - if champ has 60 seconds left say "WAKE UP CHAMP!!!!!!!!!"
-- - if any mon gets FRZ say "Am I glad he's frozen in there and that we're out here, and that he's the sheriff, and that we're frozen out here, and that we're in there, and I just remembered, we're out here. What I wanna know is, where's the caveman?"
+
 
 Improve:
 - Ability to scan thread for available battles in a scan-snooze-scan matter where the snooze is over 5 minutes
 - - if(statusType == "idle") {
 - Snap function [still doesnt fuckin work]
-- User responses [when greeted, does not respond except to Roxle's main account]
+- User responses [will not respond, is able to greet certain users if hardcoded in]
+
+DONE
+- if any mon gets FRZ say "Am I glad he's frozen in there and that we're out here, and that he's the sheriff, and that we're frozen out here, and that we're in there, and I just remembered, we're out here. What I wanna know is, where's the caveman?"
 
 
 og todo:
@@ -24,7 +26,7 @@ og todo:
 - Make dogars-chan check dubs/trips/quads [does this]
 - Make hijacker play random moves/run an AI (fuck this noise just look at dev's version)
  
-
+vvv t.OP
 Any AI doesn't have to play perfectly all the time, just to not stroke at critical times. A bad move due to a missed predict is ok, but not 3 times in a row.
 Getting a switch predicted is OK, but switching out a +4 def/spdef snips in front of a burnt lando that doesn't have SD is not.
 
