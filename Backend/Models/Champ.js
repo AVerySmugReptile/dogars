@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Champ {
+    constructor(name, trip) {
+        this.name = name;
+        this.trip = trip;
+    }
+}
+exports.Champ = Champ;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhbXAuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvQmFja2VuZC9Nb2RlbHMvQ2hhbXAudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxNQUFhLEtBQUs7SUFFZCxZQUFZLElBQVksRUFBRSxJQUFZO1FBQ2xDLElBQUksQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFDO1FBQ2pCLElBQUksQ0FBQyxJQUFJLEdBQUcsSUFBSSxDQUFDO0lBQ3JCLENBQUM7Q0FTSjtBQWRELHNCQWNDIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNsYXNzIENoYW1wIHtcbiAgICBpZCE6IG51bWJlcjtcbiAgICBjb25zdHJ1Y3RvcihuYW1lOiBzdHJpbmcsIHRyaXA6IHN0cmluZykge1xuICAgICAgICB0aGlzLm5hbWUgPSBuYW1lO1xuICAgICAgICB0aGlzLnRyaXAgPSB0cmlwO1xuICAgIH1cblxuICAgIG5hbWUhOiBzdHJpbmc7XG4gICAgdHJpcCE6IHN0cmluZztcbiAgICB3aW5zITogbnVtYmVyO1xuICAgIGxvc2VzITogbnVtYmVyO1xuICAgIGF2YXRhcj86IHN0cmluZztcbiAgICBlbG8hOiBudW1iZXI7XG4gICAgc2hvd2Rvd25fbmFtZSE6IHN0cmluZztcbn1cbiJdfQ==
